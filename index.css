@@ -68,3 +68,16 @@ body{
     height: 1px;
     background: #2F3E53;
 }
+
+.output-fields{
+    display: flex;
+    gap:1vw;
+
+}
+
+.output-fields input[readonly]{
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+}
