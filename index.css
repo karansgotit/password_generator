@@ -41,7 +41,9 @@ body{
     flex-direction: column ;
     margin: 0;
     padding-right: 10px;
-    padding-left: 1.2vw;
+    padding-left: 6vw;
+    align-items: center;
+    
     
 }
 #description{
@@ -50,23 +52,26 @@ body{
    font-weight: 400;
    font-size: 20px;
    line-height: 28px;
-   margin: inherit;
+   margin:8px 0 5vh 6px;
+
 }
 
 
 #main-button{
     margin: inherit;
-    align-self: flex-start;
+    align-self:flex-start;
     background-color: #10B981;
     padding:9px 17px 9px 15px;
     border-radius: 6px;
     border: none;
-    color: #ECFDF5;
+    color: #ECFDF5;;
+    
 }
 
 .line{
     height: 1px;
     background: #2F3E53;
+    align-self: stretch;
 }
 
 .output-fields{
@@ -80,4 +85,8 @@ body{
     border: none;
     border-radius: 6px;
     text-align: center;
+    color: #10B981;
+    height: 39px;
+    width: 211px;
+
 }
