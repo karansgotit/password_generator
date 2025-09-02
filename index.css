@@ -42,7 +42,6 @@ body{
     margin: 0;
     padding-right: 10px;
     padding-left: 1.2vw;
-
     
 }
 #description{
@@ -56,10 +55,16 @@ body{
 
 
 #main-button{
+    margin: inherit;
     align-self: flex-start;
     background-color: #10B981;
     padding:9px 17px 9px 15px;
     border-radius: 6px;
     border: none;
     color: #ECFDF5;
+}
+
+.line{
+    height: 1px;
+    background: #2F3E53;
 }
