@@ -15,7 +15,8 @@ body{
 }
 
 .headings{
-    margin: 0;
+    margin: 0 ;
+    padding-right:10px;
     font-family: "Karla", sans-serif;
     font-weight: 800;
     font-size:40px;
@@ -34,18 +35,31 @@ body{
     margin: inherit;
     
 }
+.button-and-descriptions{
+    display: flex;
+    gap:5vh;
+    flex-direction: column ;
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 1.2vw;
 
+    
+}
 #description{
    font-family: "Inter", sans-serif;
    color: #D5D4D8;
    font-weight: 400;
    font-size: 20px;
    line-height: 28px;
-   position: relative;
-   margin: 0;
-   left:11px;
-   top:5px;
+   margin: inherit;
+}
 
 
-   
+#main-button{
+    align-self: flex-start;
+    background-color: #10B981;
+    padding:9px 17px 9px 15px;
+    border-radius: 6px;
+    border: none;
+    color: #ECFDF5;
 }
