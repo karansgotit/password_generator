@@ -94,4 +94,9 @@ body{
 
 .toggle{
     display: flex;
+    gap: 25px;
+}
+
+.inner-toggle{
+    color: #ECFDF5;
 }

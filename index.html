@@ -21,8 +21,14 @@
         <div class = "button-and-descriptions">
             <p id = "description">Never use an insecure password again.</p>
             <div class = "toggle">
-                <input type = "checkbox" id = "toggle-symbol">
-                <input type = "checkbox" id = "toggle-number">
+                <div class ="inner-toggle">
+                    <input type = "checkbox" id = "toggle-symbol" onchange ="">
+                    <label for ="toggle-symbol">Symbols</label>
+                </div>
+                <div class = "inner-toggle">
+                    <input type = "checkbox" id = "toggle-number">
+                    <label for ="toggle-number">Numbers</label>
+                </div>
             </div>
             <button id = "main-button" onclick = "setValue()">Generate passwords</button>
             <div class = "line" aria-hidden="true"></div>
