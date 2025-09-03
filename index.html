@@ -20,7 +20,11 @@
         </div>
         <div class = "button-and-descriptions">
             <p id = "description">Never use an insecure password again.</p>
-            <button id = "main-button">Generate passwords</button>
+            <div class = "toggle">
+                <input type = "checkbox" id = "toggle-symbol">
+                <input type = "checkbox" id = "toggle-number">
+            </div>
+            <button id = "main-button" onclick = "setValue()">Generate passwords</button>
             <div class = "line" aria-hidden="true"></div>
             <div class = "output-fields">
                 <input type = "text" id ="password-1" value ="secret123" readonly>

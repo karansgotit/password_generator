@@ -3,6 +3,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 
 let firstValue = document.querySelector("#password-1")
 let secondValue = document.querySelector("#password-2")
+let btn = document.querySelector("#main-button")
 let passwordLength = 15
 
 function getrandomPassword(){
@@ -14,5 +15,7 @@ function getrandomPassword(){
     return initialString
 }
 
-firstValue.value = getrandomPassword()
-secondValue.value = getrandomPassword() 
+function setValue(){
+    firstValue.value = getrandomPassword()
+    secondValue.value = getrandomPassword() 
+}
