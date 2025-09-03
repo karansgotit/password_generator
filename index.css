@@ -37,12 +37,12 @@ body{
 }
 .button-and-descriptions{
     display: flex;
-    gap:5vh;
+    gap:35px;
     flex-direction: column ;
     margin: 0;
     padding-right: 10px;
-    padding-left: 6vw;
-    align-items: center;
+    padding-left: 110px;
+    align-items: flex-start;
     
     
 }
@@ -52,19 +52,20 @@ body{
    font-weight: 400;
    font-size: 20px;
    line-height: 28px;
-   margin:8px 0 5vh 6px;
+   margin:8px 0 8px 0;
+   
 
 }
 
 
 #main-button{
-    margin: inherit;
-    align-self:flex-start;
+    margin: 0;
     background-color: #10B981;
     padding:9px 17px 9px 15px;
     border-radius: 6px;
     border: none;
-    color: #ECFDF5;;
+    color: #ECFDF5;
+    cursor: pointer;
     
 }
 
