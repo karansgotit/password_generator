@@ -3,10 +3,16 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 
 let firstValue = document.querySelector("#password-1")
 let secondValue = document.querySelector("#password-2")
+let passwordLength = 15
 
-function getRandomIndex(){
-    let randomIndex = Math.random() 
-    console.log(randomIndex)
+function getrandomPassword(){
+    let initialString = ""
+    for(let i = 0; i < passwordLength;i++){
+        let randomIndex = Math.floor(Math.random()*characters.length)
+        initialString += characters[randomIndex]
+    }
+    return initialString
 }
 
-getRandomIndex()
+firstValue.value = getrandomPassword()
+secondValue.value = getrandomPassword() 
