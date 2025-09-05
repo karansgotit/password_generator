@@ -94,9 +94,11 @@ body{
 
 .toggle{
     display: flex;
-    gap: 25px;
+    gap: 17px;
 }
-
+#output{
+    display: block;
+}
 .inner-toggle{
     color: #ECFDF5;
 }
@@ -110,5 +112,12 @@ body{
 }
 
 .password-length{
+    color: #ECFDF5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label{
     color: #ECFDF5;
 }
