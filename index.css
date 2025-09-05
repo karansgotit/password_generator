@@ -104,3 +104,7 @@ body{
 .password-fields{
     cursor: pointer;
 }
+
+.password-fields:focus{
+    outline: none;
+}
