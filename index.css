@@ -108,3 +108,7 @@ body{
 .password-fields:focus{
     outline: none;
 }
+
+.password-length{
+    color: #ECFDF5;
+}
