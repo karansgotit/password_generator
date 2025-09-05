@@ -11,6 +11,8 @@ const alphabets = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 let firstValue = document.querySelector("#password-1")
 let secondValue = document.querySelector("#password-2")
 let btn = document.querySelector("#main-button")
+let symbolCheckbox = document.querySelector("#toggle-symbol")
+let numberCheckbox = document.querySelector("#toggle-number")
 let passwordLength = 15
 
 function getrandomPassword(arr){
@@ -27,10 +29,54 @@ function setValue(password1,password2){
     secondValue.value = password2
 }
 
-function handleToggle(checkbox){
-    let a = checkbox.id
-    let passwordString =""
-    if(a === "toggle-symbol"){
+function handleToggle(){
+    let a = symbolCheckbox.checked
+    let b = numberCheckbox.checked
+    let password1 =""
+    let password2 =""
+    if(a && b){
+        password1 = getrandomPassword(characters)
+        password2 = getrandomPassword(characters)
+        setValue(password1,password2)
         
     }
+    else if(a && !b){
+        password1 = getrandomPassword(symbolsAlphabets)
+        password2 = getrandomPassword(symbolsAlphabets)
+        setValue(password1,password2)
+    }
+    else if(b && !a){
+        password1 = getrandomPassword(numbersAlphabets)
+        password2 = getrandomPassword(numbersAlphabets)
+        setValue(password1,password2)
+    }
+    else{
+        password1 = getrandomPassword(alphabets)
+        password2 = getrandomPassword(alphabets)
+        setValue(password1,password2)
+    }
 }
+
+function copyToClipboard(element){
+    navigator.clipboard.writeText(element.value).then (() => {
+    const originalText = element.value;
+    element.value = "Copied";
+    setTimeout(() => {
+        element.value = originalText;
+    },1000);
+    }).catch(() => {
+    alert("Failed to copy");
+})
+}
+
+btn.addEventListener("click",() =>{
+    handleToggle();
+});
+
+firstValue.addEventListener("click",() =>{
+    copyToClipboard(firstValue);
+});
+
+secondValue.addEventListener("click",() =>{
+    copyToClipboard(secondValue);
+});
