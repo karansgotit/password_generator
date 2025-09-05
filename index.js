@@ -13,7 +13,16 @@ let secondValue = document.querySelector("#password-2")
 let btn = document.querySelector("#main-button")
 let symbolCheckbox = document.querySelector("#toggle-symbol")
 let numberCheckbox = document.querySelector("#toggle-number")
+let output = document.querySelector("#output")
 let passwordLength = 15
+
+
+let passwordSlider = document.querySelector("#password-range")
+passwordSlider.addEventListener("input",() =>{
+    passwordLength = passwordSlider.value;
+    output.textContent = passwordLength;
+});
+
 
 function getrandomPassword(arr){
     let initialString = ""
